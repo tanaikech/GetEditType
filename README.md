@@ -121,7 +121,7 @@ If you have any questions and commissions for me, feel free to tell me.
 
 # Update History
 
-- v1.0.0 (June 11, 2019)
+- v1.0.0 (June 10, 2019)
 
   1. Initial release.
 
