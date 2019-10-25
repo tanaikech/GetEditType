@@ -1,15 +1,15 @@
 # GetEditType
 
-<a name="TOP"></a>
+<a name="top"></a>
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENCE)
 
-<a name="Overview"></a>
+<a name="overview"></a>
 
 # Overview
 
 **GetEditType is a GAS library for retrieving the edit types of the OnEdit event trigger of Spreadsheet using Google Apps Script (GAS).**
 
-<a name="Description"></a>
+<a name="description"></a>
 
 # Description
 
@@ -32,7 +32,7 @@ These situations might be modified by Google's update. So I created this as a li
 13DgweRAOSLMaRiAVcOIYAwoUmsAIrRW_DcfKchwaHJrLP3H-MdcENzZr
 ```
 
-<a name="Howtoinstall"></a>
+<a name="howtoinstall"></a>
 
 # How to install
 
@@ -41,7 +41,7 @@ In order to use this library, please install this as a library.
 1. [Install GetEditType library](https://developers.google.com/apps-script/guides/libraries).
    - Library's project key is **`13DgweRAOSLMaRiAVcOIYAwoUmsAIrRW_DcfKchwaHJrLP3H-MdcENzZr`**.
 
-<a name="Usage"></a>
+<a name="usage"></a>
 
 # About scopes
 
@@ -81,7 +81,7 @@ This library is returned the following values as an object.
 | :----------------- | :--------------------------- | :---------------------------------------------------------------------------------------------------------- |
 | MULTIPLE           | REMOVE_VALUES                | Values of multiple cells were removed.<br>Empty values were pasted.                                         |
 | MULTIPLE           | PUT_VALUES_TO_MULTIPLE_CELLS | Values were put to multiple cells.<br>Copied down was run for multiple cells.<br>Cells were moved.          |
-| SINGLE             | PUT_VALUE                    | Empty cell was edited.                                                                                      |
+| SINGLE             | PUT_VALUE                    | Empty cell was edited.<br>Value of the clipboard was directly pasted to a cell.                                                                                      |
 | SINGLE             | OVERWRITE_CELL               | Cell with a value was overwritten by a value.                                                               |
 | SINGLE             | REMOVE_VALUE                 | Value of cell was removed.<br>Empty value was pasted.<br>Value of empty cell was removed.                   |
 | SINGLE             | OTHER                        | Value of the clipboard was directly pasted to a cell.<br>Copied down was run for a cell.<br>Cell was moved. |
@@ -101,15 +101,17 @@ This library is returned the following values as an object.
 
 - [Stackoverflow: How to make the onEdit() event object e work when copying and pasting values into blank cells or non-blank cells in Google Sheets?](https://stackoverflow.com/q/56445944)
 
+- [Stackoverflow: google script detect empty cell after edit — Take 2](https://stackoverflow.com/q/58477852)
+
 ---
 
-<a name="Licence"></a>
+<a name="licence"></a>
 
 # Licence
 
 [MIT](LICENCE)
 
-<a name="Author"></a>
+<a name="author"></a>
 
 # Author
 
@@ -117,7 +119,7 @@ This library is returned the following values as an object.
 
 If you have any questions and commissions for me, feel free to tell me.
 
-<a name="Update_History"></a>
+<a name="updatehistory"></a>
 
 # Update History
 
@@ -125,4 +127,8 @@ If you have any questions and commissions for me, feel free to tell me.
 
   1. Initial release.
 
-[TOP](#TOP)
+- v1.0.1 (October 25, 2019)
+
+  1. Updated: [This answer](https://stackoverflow.com/a/58499090) was reflected.
+
+[TOP](#top)
